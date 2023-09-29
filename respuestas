@@ -1,0 +1,6 @@
+A simple vista se puede observar como en todos los casos un sòlo hilo(comensal) es quien come todas las hamburguesas
+y en algunos casos ademàs, al terminar de ejecutarse un hilo el otro se come una hamburguesa que ya no existe y despuès
+termina.
+El error presentado aquì es un race condition ya que ambos hilos(comensales) intentan comer las hamburguesas y no hay
+ningùn mecanismo para controlar el acceso a la regiòn crìtica por lo que la ejecuciòn de los mismos se produce de 
+manera arbitraria en vez de alternada como se espera.
